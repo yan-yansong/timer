@@ -322,8 +322,30 @@
 				padding: 10px;
 			}
 			h1 {
-				display: none;
-			}
+
+	margin: 0 0 22px;
+	font-size: 2.2rem;
+	text-align: center;
+	font-weight: 900;
+	background: linear-gradient(135deg, #ec4899, #f97316, #eab308);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	letter-spacing: 1px;
+	text-shadow: 0 0 24px rgba(236, 72, 153, 0.35);
+
+}
+
+@media (max-width: 600px) {
+
+	h1 {
+		display: block;
+		font-size: 1.55rem;
+		margin: 12px 0 16px;
+		white-space: nowrap;
+	}
+
+}
 			.card {
 				padding: 10px;
 				margin-top: 8px;
@@ -357,7 +379,7 @@
 </head>
 <body>
 	<div class="container">
-		<div class="card" style="margin-top: 0; margin-bottom: 24px;">
+	<div class="card" style="margin-top: 0; margin-bottom: 24px;">
 			<div class="status" id="phaseLabel">准备就绪</div>
 			<div class="time" id="countdown">00:00</div>
 			<div class="meta">
